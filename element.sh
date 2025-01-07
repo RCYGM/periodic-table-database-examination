@@ -10,5 +10,9 @@ else
   fi
   if [[ -z $ELEMENT_DATA ]]; then
     echo "I could not find that element in the database."
+  else
+    echo "$ELEMENT_DATA" | while IFS='|' read ATOMIC_NUMBER NAME SYMBOL ATOMIC_MASS MELTING_POINT_CELSIUS BOILING_POINT_CELSIUS; do
+      echo "The element with atomic number $ATOMIC_NUMBER is $NAME ($SYMBOL). It's a nonmetal, with a mass of $ATOMIC_MASS amu. $NAME has a melting point of $MELTING_POINT_CELSIUS celsius and a boiling point of $BOILING_POINT_CELSIUS celsius."
+    done
   fi
 fi
