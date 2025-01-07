@@ -8,4 +8,7 @@ else
   else
     ELEMENT_DATA=$($PSQL "SELECT atomic_number, name, symbol, atomic_mass, melting_point_celsius, boiling_point_celsius  FROM elements INNER JOIN properties USING(atomic_number) WHERE name ILIKE '$1' OR symbol ILIKE '$1';")
   fi
+  if [[ -z $ELEMENT_DATA ]]; then
+    echo "I could not find that element in the database."
+  fi
 fi
