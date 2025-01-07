@@ -1,6 +1,6 @@
 # Periodic Table Database Examination #4
 
-[View full path here]([https://github.com/RCYGM/periodic-table-database-examination](https://github.com/RCYGM/relational-database-projects)
+[View full path here](https://github.com/RCYGM/relational-database-projects)
 
 This project demonstrates my ability to design, manage, and query a relational database representing the periodic table of elements using PostgreSQL and Bash. Through this examination, my skills in database normalization, task automation, and creating user-friendly interactions were evaluated.
 
